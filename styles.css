@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Dancing+Script&family=Indie+Flower&family=Merriweather:ital@1&family=Roboto+Slab:wght@200&family=Sansita+Swashed&family=Shadows+Into+Light&family=Uchen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Sansita Swashed', cursive; 
+    color: white;
+    background-color: rgb(243, 59, 59);
+}
+
+/* SECTION DONDE SE ENCUENTRAN TODOS LOS POKEMON */
+section {
+    width: 70%;
+    height: 100vh;
+    float: left;
+    background: rgb(242,74,74);
+    background: linear-gradient(90deg, rgba(242,74,74,1) 0%, rgba(182,19,19,1) 100%);
+    overflow: scroll;
+    border: 2px solid black;
+}
+
+.imgPok {
+    width: 100px;
+}
+
+.imgPok:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+/* LADO PARA HACEER BUSQUEDAS DE POKEMON */
+
+aside {
+    width: 30%;
+    height: 100vh;
+    float: right;
+    background-image: url(./fondoPoke.jpg);
+    background-size: cover;
+    border: 2px solid black;
+}
+
+input {
+    background-color: #eeecec1a;
+    color: white;
+    border-radius: 5px;
+    margin: 98px 0 0 5px;
+    padding: 5px;
+    width: 55%;
+    font-size: 15px;
+    border-top: 400px;
+    
+}
+
+::placeholder{
+    color: white;
+    width: 300px;
+}
+
+.imgAside{
+    width: 150px;
+}
+
+.intro_random{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.contenedor_dato{
+    width: 80%;
+    padding-left: 20px;
+}
+
+#pokebola img{
+    height: 100px;
+}
+
+.pokemonAside{
+    color: white;
+}
+
+@media screen and (max-width: 590px) {
+    section {
+        width: 0%;
+        height: 100vh;
+        display: none;
+    }
+
+    .row{
+        display: none;
+    }
+
+    aside {
+        width: 100%;
+        height: 100vh;
+        float: none;
+    }
+
+    input{
+        margin: 120px 0 0 5px;
+    }
+
+    .sabias{
+    padding-top: 40px;
+}
+
+}
